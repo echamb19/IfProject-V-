@@ -9,8 +9,17 @@ public class Library
 	private boolean isOpen;
 	private String libraryName;
 	
+	/**
+	 * Default constructor for a Library. 
+	 * Initializes all variables to valid, but "bad" values. 
+	 * Used for later customization. 
+	 */
 	public Library()
 	{
+		this.books = -75;
+		this.people = -75; 
+		this.librarianName = "NotAName"; 
+		this.finishedBooks = 7.5;
 		
 	}
 	
