@@ -67,7 +67,7 @@ public class IfController
 		String response = JOptionPane.showInputDialog(null, "How many books have you finished?");
 		while(!validInt(response))
 		{
-			response = JOptionPane.showInputDialog(null, "Enter a decimal number please.");
+			response = JOptionPane.showInputDialog(null, "Enter a whole number please.");
 		}
 		
 		books.setBooks(Integer.parseInt(response));
@@ -107,6 +107,7 @@ public class IfController
 		try
 		{
 			Integer.parseInt(maybeInt);
+			isValid = true;
 		}
 		catch (NumberFormatException error) //Two things inside perens is formal perameter
 		{
