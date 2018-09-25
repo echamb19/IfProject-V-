@@ -14,8 +14,50 @@ public class IfController
 	{
 
 	}
+	
 	public void start() 
+	{
+		loopy();
+	}
+	
+	private void questions()
 	{
 		
 	}
+	
+	private void moreInput()
+	{
+		
+	}
+		
+	/*public boolean validInt(String sample)
+	{
+		Not working and I'm too tired to make it work. 
+	}*/
+	
+	private void loopy() 
+	{
+		//define a variable before the loop
+		boolean isFinished = false; 
+		int someCount = 0;
+		
+		//Test the code
+		while(!isFinished) //Never put semicolon here ever
+		{
+			JOptionPane.showMessageDialog(null, "I am Annoying!!!");
+		
+		
+			someCount++; //the ++ is different if used before. 
+			someCount += 1; //use this in swift
+		
+			if (someCount > 10)
+		
+			{
+				isFinished = true;
+			//update test variable last thing before close the loop 
+			}
+		}
+	}
+	
 }
+
