@@ -44,19 +44,18 @@ public class IfController
 		boolean isFinished = false; 
 		int someCount = 0;
 		
-		
 		Library books = new Library();
 		
 		//Test the code
 		while(!isFinished) //Never put semicolon here ever
 		{
 
-			
+			//Do code 
 			JOptionPane.showMessageDialog(null, "I am Annoying!!!");
 		
 			someCount++; //the ++ is different if used before. 
 			someCount += 1; //use this in swift
-		
+			//Update the test variable
 			if (someCount > 10)
 		
 			{
@@ -66,12 +65,18 @@ public class IfController
 		}
 		
 		String response = JOptionPane.showInputDialog(null, "How many books have you finished?");
-		while(!validDouble(response))
+		while(!validInt(response))
 		{
 			response = JOptionPane.showInputDialog(null, "Enter a decimal number please.");
 		}
 		
-		Library.setBooks(Double.parseDouble(response));
+		books.setBooks(Integer.parseInt(response));
+		
+		for (int index = 0; index < 10; index++)
+		{
+			
+		}
+		
 		
 	}
 	
