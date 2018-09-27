@@ -45,6 +45,7 @@ public class IfController
 		int someCount = 0;
 		
 		Library books = new Library();
+		Library finishedBooks = new Library();
 		
 		//Test the code
 		while(!isFinished) //Never put semicolon here ever
@@ -64,7 +65,7 @@ public class IfController
 			}
 		}
 		
-		String response = JOptionPane.showInputDialog(null, "How many books have you finished?");
+		String response = JOptionPane.showInputDialog(null, "How many books does the library have?");
 		while(!validInt(response))
 		{
 			response = JOptionPane.showInputDialog(null, "Enter a whole number please.");
@@ -72,17 +73,33 @@ public class IfController
 		
 		books.setBooks(Integer.parseInt(response));
 		
-		for (int index = 0; index < 10; index++)
+	//	for (int index = 0; index < 10; index++)
 		{
 			
 		}
 		
+		String NrBooks = JOptionPane.showInputDialog(null, "How many books have you finished?");
+		while(!validDouble(NrBooks))
+		{
+			NrBooks = JOptionPane.showInputDialog(null, "Enter a decimal number please.");
+		}
 		
+		books.setFinishedBooks(Double.parseDouble(NrBooks));
 	}
 	
 	private void myLoop()
 	{
+		boolean isFinished = false; 
+		int someCount = 0;
+		Library people = new Library();
 		
+		String Peeps = JOptionPane.showInputDialog(null, "How many peoople are in the library?");
+		while (!isFinished)
+		{
+			Peeps = JOptionPane.showInputDialog (null, "Enter a whole number please.");
+		}
+		
+		people.setPeople(Integer.parseInt(Peeps));
 	}
 	
 	public boolean validDouble(String mightBeDouble)
@@ -98,6 +115,7 @@ public class IfController
 		{
 			JOptionPane.showMessageDialog(null, "Type a decimal value please.");
 		}
+		
 		return isValid;
 	}
 	
@@ -109,7 +127,7 @@ public class IfController
 			Integer.parseInt(maybeInt);
 			isValid = true;
 		}
-		catch (NumberFormatException error) //Two things inside perens is formal perameter
+		catch (NumberFormatException error) //Two things inside perens is formal parameter
 		{
 			JOptionPane.showMessageDialog(null, "You need to type in a whole number. :)");
 		}
