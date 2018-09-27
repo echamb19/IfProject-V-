@@ -48,7 +48,7 @@ public class IfController
 		Library finishedBooks = new Library();
 		
 		//Test the code
-		while(!isFinished) //Never put semicolon here ever
+			while(!isFinished) //Never put semicolon here ever
 		{
 
 			//Do code 
@@ -74,9 +74,7 @@ public class IfController
 		books.setBooks(Integer.parseInt(response));
 		
 	//	for (int index = 0; index < 10; index++)
-		{
-			
-		}
+		
 		
 		String NrBooks = JOptionPane.showInputDialog(null, "How many books have you finished?");
 		while(!validDouble(NrBooks))
@@ -89,12 +87,11 @@ public class IfController
 	
 	private void myLoop()
 	{
-		boolean isFinished = false; 
-		int someCount = 0;
+
 		Library people = new Library();
 		
 		String Peeps = JOptionPane.showInputDialog(null, "How many peoople are in the library?");
-		while (!isFinished)
+		while (!validInt(Peeps))
 		{
 			Peeps = JOptionPane.showInputDialog (null, "Enter a whole number please.");
 		}
@@ -135,5 +132,20 @@ public class IfController
 		return isValid;
 	}
 	
+	public boolean validBoolean(String maybeBoolean)
+	{
+		boolean isValid = false; 
+		try
+		{
+			Boolean.parseBoolean(maybeBoolean);
+			isValid = true;
+		}
+		catch (NumberFormatException error)
+		{
+			JOptionPane.showMessageDialog(null, "Pick in true or false.");
+		}
+		return isValid;
+		
+	}
 }
 
