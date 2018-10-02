@@ -8,6 +8,7 @@ public class Library
 	private double finishedBooks;
 	private boolean isOpen;
 	private String libraryName;
+	private int math;
 	
 	// v This is a javadoc used to put info in about things and you get the info when you hover over it. 
 	/**
@@ -22,9 +23,8 @@ public class Library
 		this.librarianName = "NotAName"; 
 		this.finishedBooks = 7.5;
 		this.isOpen = false; 
-		this.libraryName = "NoNameLibrary";
+		this.math = 1;
 	}
-	
 	/**
 	 * Initializes the books etc. with a value for the stuff.
 	 * @param books 			The number of books.
@@ -34,15 +34,30 @@ public class Library
 	 * @param isOpen 			This tells you whether the library is open. 
 	 * @param libraryName 		What the name of the library is. 
 	 */
-	 public Library(int books, int people, String librarianName, double finishedBooks, boolean isOpen, String libraryName)
+	 public Library(int books, int people, String librarianName, double finishedBooks, boolean isOpen, String libraryName, int math)
 	 {
 		 this.books = books;
 		 this.people = people; 
 		 this.librarianName = librarianName; 
 		 this.libraryName = libraryName;
 		 this.isOpen = isOpen;
-		 this.librarianName = librarianName;		 
+		 this.librarianName = librarianName;
+		 this.math = math;
+
 	 }
+	 
+	 
+	 public int getMath()
+	 {
+		 return math;
+	 }
+	 
+	 public void setMath(int math)
+	 {
+		 this.math = math;
+	 }
+	 
+	 
 	 
 	 public int getBooks()
 	 {

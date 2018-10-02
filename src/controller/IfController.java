@@ -20,7 +20,7 @@ public class IfController
 	{
 		loopy();
 		myLoop();
-		newLoop();
+		mathLoop();
 	}
 	
 	private void questions()
@@ -95,7 +95,6 @@ public class IfController
 		{
 			Peeps = JOptionPane.showInputDialog (null, "Enter a whole number please.");
 		}
-		
 		people.setPeople(Integer.parseInt(Peeps));
 		
 		
@@ -108,9 +107,28 @@ public class IfController
 	}
 	
 	
-	private void newLoop()
-	{
-		
+	private void mathLoop()
+	{	
+		Library math = new Library();
+		boolean isCorrect = true;
+		while (isCorrect == true)
+		{
+		String answer = JOptionPane.showInputDialog(null, "What is '67-32'?");
+		while (!validInt(answer))
+		{
+			answer = JOptionPane.showInputDialog(null, "Type a whole number.");
+		}
+		math.setMath(Integer.parseInt(answer));
+		if (math.getMath() == 35)
+		{
+			JOptionPane.showMessageDialog(null, "You got it right! :D");
+			isCorrect = false;
+		}
+		else 
+			{
+			JOptionPane.showMessageDialog (null, "You got it wrong, you IDIOT!");
+			}
+		}
 	}
 	
 	
