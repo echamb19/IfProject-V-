@@ -20,7 +20,7 @@ public class IfController
 	{
 		loopy();
 		myLoop();
-		
+		newLoop();
 	}
 	
 	private void questions()
@@ -49,7 +49,7 @@ public class IfController
 		
 		//Test the code
 			while(!isFinished) //Never put semicolon here ever
-		{
+			{
 
 			//Do code 
 			JOptionPane.showMessageDialog(null, "I am Annoying!!!");
@@ -72,7 +72,7 @@ public class IfController
 		}
 		
 		books.setBooks(Integer.parseInt(response));
-		
+		//JOptionPane.showMessageDialog(null, "Your library has" + Library.getBooks() + "books");
 	//	for (int index = 0; index < 10; index++)
 		
 		
@@ -106,6 +106,13 @@ public class IfController
 		}
 		people.setIsOpen(Boolean.parseBoolean(open));
 	}
+	
+	
+	private void newLoop()
+	{
+		
+	}
+	
 	
 	public boolean validDouble(String mightBeDouble)
 	{
