@@ -97,6 +97,14 @@ public class IfController
 		}
 		
 		people.setPeople(Integer.parseInt(Peeps));
+		
+		
+		String open = JOptionPane.showInputDialog(null, "The library is open?");
+		while (!validBoolean(open))
+		{
+			open = JOptionPane.showInputDialog(null, "Please type either true or false.");		
+		}
+		people.setIsOpen(Boolean.parseBoolean(open));
 	}
 	
 	public boolean validDouble(String mightBeDouble)
