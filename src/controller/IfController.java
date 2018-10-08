@@ -138,6 +138,17 @@ public class IfController
 			//I put things inside the list ^ there and took something out V there
 			bookTitles.remove("Blood of Olympus");
 		 }
+		 
+		 bookTitles.forEach()
+		 {
+			 
+		 }
+		
+		 ArrayList<Integer> numbers = new ArrayList<Integer>();
+		 {
+			numbers.add(5);
+			numbers.add(7);
+		 }
 	 }
 	
 	public boolean validDouble(String mightBeDouble)
