@@ -5,6 +5,7 @@ package controller;
  */
 import javax.swing.JOptionPane;
 import model.Library;
+import java.util.ArrayList;
 
 public class IfController
 {
@@ -21,17 +22,9 @@ public class IfController
 		loopy();
 		myLoop();
 		mathLoop();
+		practiceList();
 	}
 	
-	private void questions()
-	{
-		
-	}
-	
-	private void moreInput()
-	{
-		
-	}
 		
 	/*public boolean validInt(String sample)
 	{
@@ -128,9 +121,20 @@ public class IfController
 			{
 			JOptionPane.showMessageDialog (null, "You got it wrong, you IDIOT!");
 			}
+		
 		}
+	
 	}
 	
+	
+	public void practiceList()
+	 {
+		 ArrayList<String> bookTitles = new ArrayList<String>();
+		 {
+			bookTitles.add("Title");
+			
+		 }
+	 }
 	
 	public boolean validDouble(String mightBeDouble)
 	{
