@@ -131,8 +131,12 @@ public class IfController
 	 {
 		 ArrayList<String> bookTitles = new ArrayList<String>();
 		 {
-			bookTitles.add("Title");
-			
+			bookTitles.add("Throne of Glass");
+			bookTitles.add("Mr. Lemoncello's Library");
+			bookTitles.add("Percy Jackson and the Lightning Theif");
+			bookTitles.add("Blood of Olympus");
+			//I put things inside the list ^ there and took something out V there
+			bookTitles.remove("Blood of Olympus");
 		 }
 	 }
 	
