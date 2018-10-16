@@ -10,7 +10,7 @@ public class Library
 	private String libraryName;
 	private int math;
 	
-	// v This is a javadoc used to put info in about things and you get the info when you hover over it. 
+	// v This is javadoc used to put info in about things and you get the info when you hover over it. 
 	/**
 	 * Default constructor for a Library. 
 	 * Initializes all variables to valid, but "bad" values. 
@@ -41,7 +41,6 @@ public class Library
 		 this.librarianName = librarianName; 
 		 this.libraryName = libraryName;
 		 this.isOpen = isOpen;
-		 this.librarianName = librarianName;
 		 this.math = math;
 
 	 }
@@ -92,7 +91,7 @@ public class Library
 	 
 	 public void setBooks(int books)
 	 {
-		 this.books = books;
+		 this.books = books; 
 	 }
 	 
 	 public void setPeople(int people)

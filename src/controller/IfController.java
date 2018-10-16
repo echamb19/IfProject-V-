@@ -126,23 +126,29 @@ public class IfController
 	
 	}
 	
-	
+	/**
+	 * This is my practice list. I used it to make a list of books titles that I could think of that would be in the library. 
+	 * I added five books then got rid of the book that didn't belong. (It was poetry, which is placed with non-fiction.)
+	 * All of the variables are String variables, they are added with the '.add' mechanism. 
+	 */
 	public void practiceList()
 	 {
 		 ArrayList<String> bookTitles = new ArrayList<String>();
-		 {
+		 
 			bookTitles.add("Throne of Glass");
 			bookTitles.add("Mr. Lemoncello's Library");
 			bookTitles.add("Percy Jackson and the Lightning Theif");
 			bookTitles.add("Blood of Olympus");
+			bookTitles.add("Where the Sidewalk Ends");
 			//I put things inside the list ^ there and took something out V there
-			bookTitles.remove("Blood of Olympus");
-		 }
+			bookTitles.remove("Where the Sidewalk Ends");
 		 
-		 bookTitles.forEach()
-		 {
-			 
-		 }
+		
+		for(String title : bookTitles)
+		{
+		 JOptionPane.showMessageDialog (null, "There is a book. It's name is " + title);	 
+		}
+		
 		
 		 ArrayList<Integer> numbers = new ArrayList<Integer>();
 		 {
@@ -150,7 +156,12 @@ public class IfController
 			numbers.add(7);
 		 }
 	 }
-	
+	/** 
+	 * This code is meant to catch a mistake when you are meant to type a double. 
+	 * It is effective in preventing your program from crashing. 
+	 * @param mightBeDouble
+	 * @return
+	 */
 	public boolean validDouble(String mightBeDouble)
 	{
 		boolean isValid = false;
