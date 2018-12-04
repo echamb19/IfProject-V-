@@ -50,8 +50,8 @@ public class IfController
 			someCount++; //the ++ is different if used before. 
 			someCount += 1; //use this in swift
 			//Update the test variable
+			
 			if (someCount > 10)
-		
 			{
 				isFinished = true;
 			//update test variable last thing before close the loop 
